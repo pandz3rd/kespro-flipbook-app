@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Lobster+Two|Timmana');
+
+body{
+	background-image: url(b7cbdc2a3d017943009c1120df12d432.jpg);
+	padding:30px;
+}
+p {
+    text-indent: 50px;
+}
+.header{
+	font-family: 'Lobster Two', sans-serif;
+	font-size:28px;
+	height: 100%;
+	padding:10px;
+	border-bottom:1px solid #000000;
+	border-radius-top:3px;
+	background-color:rgba(0,0,0,0.8);
+	color:#ffffff;
+}
+.header img{
+	width:10%;
+	float:right;
+}
+.ket{
+	font-family: 'ABeeZee',sans-serif;
+	background-color:rgba(255,255,255,0.9);
+	padding:5px;
+}
+
+.artikel1{
+	font-family: 'ABeeZee',sans-serif;
+	padding:10px 40px 20px 30px;
+	background-color:rgba(20, 110, 255,0.9);
+}
+.artikel2{
+	font-family: 'ABeeZee',sans-serif;
+	padding:10px 40px 20px 30px;
+	background-color:rgba(255, 76, 147,0.9);
+}
+.artikel3{
+	font-family: 'Timmana',sans-serif;
+	padding:10px 40px 20px 30px;
+	background-color:rgba(76, 255, 93,0.9);
+}
+.artikel4{
+	font-family: 'Timmana',sans-serif;
+	padding:10px 40px 20px 30px;
+	background-color:rgba(252, 76, 255,0.9);
+}
+.footer{
+	height:100%;
+	background-color:#000000;
+	color:#ffffff;
+}
