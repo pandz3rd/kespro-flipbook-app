@@ -1,0 +1,14 @@
+{
+  "name": "clonean",
+  "description": "gulp project",
+  "main": "index.js",
+  "authors": [
+    "aziz"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "dependencies": {
+    "normalize-css": "^6.0.0",
+    "base": "^3.2.4"
+  }
+}
