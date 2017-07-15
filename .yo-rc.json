@@ -1,0 +1,11 @@
+{
+  "generator-express": {
+    "promptValues": {
+      "type": "MVC",
+      "viewEngine": "Handlebars",
+      "cssPreprocessor": "Sass",
+      "database": "None",
+      "buildTool": "Grunt"
+    }
+  }
+}
