@@ -1,8 +1,19 @@
+@import "../components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+html{
+	height:100%;
+	background-color: #EEEEEE;
+}
 body {
-  padding: 50px;
+  //padding: 50px;
+  height:100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  //background-color: #EEEEEE;
+  max-width:1366px;
+  margin:auto;
+  position: relative;
 }
 
-a {
-  color: #00B7FF;
-}
+@import "components/_variable.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
