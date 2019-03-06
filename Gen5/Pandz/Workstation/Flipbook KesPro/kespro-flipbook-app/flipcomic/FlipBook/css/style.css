@@ -1,0 +1,5054 @@
+body, html{
+	overflow-x:hidden;
+	overflow:hidden;
+	background-color:#fcfcfc;
+	margin:0;
+	padding:0;
+}
+
+.container-menu{
+	width: 100%;
+	background-image: url('../asset/menu/MENU_LS.png');
+	background-size: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center; 
+	position: relative; 
+	opacity: 0;
+}
+
+.container-menu .hud {
+	text-align: center;
+	position: absolute; 
+	bottom: 26px; 
+}
+
+.container-menu .hud .button img{
+	width: 15%;
+	height: 15%;
+	margin: 15px;
+}
+
+.modal-about {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 60px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content-about {
+	background-image: url('../asset/about/LS1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: auto;
+	padding:20px;
+	/*padding-top: 100px;*/
+	width: 70%;
+	height: 90%;
+	position: relative;
+}
+
+.modal-content-about img {
+	width: 50%;
+	height: 50%;
+	opacity:0;
+	overflow: auto;
+}
+
+.closeAbout {
+	background-image: url('../asset/button/back/back.png');
+	background-size: 52%;
+	background-repeat: no-repeat;
+	margin-top: 448px;
+	width: 16%;
+	height: 45%;
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.closeAbout:hover, .closeAbout:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-credit {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 60px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content-credit {
+	background-image: url('../asset/credit/CREDITLS.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: auto;
+	padding:20px;
+	width: 70%;
+	height: 90%;
+	position: relative;
+}
+
+.modal-content-credit img {
+	width: 50%;
+	height: 50%;
+	opacity:0;
+	overflow: auto;
+}
+
+.closeCredit {
+	background-image: url('../asset/button/back/back.png');
+	background-size: 11%;
+	background-repeat: no-repeat;
+	margin-top: 433px;
+	width: 95%;
+	height: 45%;
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.closeCreditBtn a img{
+	position:absolute;
+	z-index:900;
+	width:10%;
+	height:55px;
+	bottom:20px;
+	right:32px;
+	background-image:url(../asset/button/back/home.png);
+	background-repeat: no-repeat;
+	background-size:11%;
+}
+
+.closeCredit:hover, .closeCredit:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.back-home a img{
+	position:absolute;
+	z-index:900;
+	width:10%;
+	height:55px;
+	bottom:20px;
+	right:32px;
+	background-image:url(../asset/button/back/home.png);
+	background-repeat: no-repeat;
+	background-size:11%;
+}
+
+.back-home:hover, .back-home:focus{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#flex-item {
+   text-align: center;
+    margin: auto;
+}
+#splash {
+	background-size: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
+
+/* (2560x1440) QWHD (landscape) */
+@media  screen and (max-width: 2560px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute;
+		right: 28%; 
+		bottom: 114px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 295%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: -1%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 149%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 162px;
+		margin-left: 224px;
+		width: 9%;
+		height: 8%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 201px;
+		margin-left: 221px;
+		width: 9%;
+		height: 8%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:8%;
+		height:77px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1920x1080) FHD (landscape) */
+@media  screen and (max-width: 1920px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute;
+		right: 20%; 
+		bottom: 71px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 374%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 62%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 219%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 107px;
+		margin-left: 180px;
+		width: 9%;
+		height: 8%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 149px;
+		margin-left: 200px;
+		width: 9%;
+		height: 8%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:7%;
+		height:54px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1280x720) HD Display (landscape) */
+@media  screen and (max-width: 1280px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 26px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 33px;
+		right: 374%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 33px;
+		right: 62%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 33px;
+		right: 219%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 63px;
+		margin-left: 112px;
+		width: 11%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 79px;
+		margin-left: 120px;
+		width: 11%;
+		height: 11%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:44px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1136x640) Smartphone2 (landscape) */
+@media  screen and (max-width: 1136px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 34px;
+		right: 5%;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 184%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 339%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 64px;
+		margin-left: 98px;
+		width: 10%;
+		height: 9%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 86px;
+		width: 11%;
+		height: 9%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:38px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1024x600) WSVGA Display (landscape) */
+@media  screen and (max-width: 1024px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 104%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 26px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: -10px;
+		top: 0;
+		width: 101%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 104%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 57px;
+		margin-left: 86px;
+		width: 12%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: -10px;
+		top: 0;
+		width: 104%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 68px;
+		margin-left: 100px;
+		width: 13%;
+		height: 11%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:38px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (960x640) DVGA Display (landscape) */
+@media  screen and (max-width: 960px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 104%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 114%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 45px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 18vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: -90px;
+		top: 0;
+		width: 120%;
+		height: 139%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 56px;
+		margin-left: 130px;
+		width: 11%;
+		height: 7%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: -90px;
+		top: -5px;
+		width: 121%;
+		height: 120%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 79px;
+		margin-left: 143px;
+		width: 12%;
+		height: 9%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:38px;
+		top:20px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 105%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (736x414) iPhone 6/7/8 Plus (landscape) ----------- */
+@media  screen and (max-width: 736px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 9px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 32px;
+		margin-left: 61px;
+		width: 12%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 46px;
+		margin-left: 67px;
+		width: 12%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:32px;
+		top:20px;
+		left:28px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (667x375) iPhone 6/7/8 (landscape) ----------- */
+@media  screen and (max-width: 667px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 5px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 27px;
+		margin-left: 59px;
+		width: 13%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 39px;
+		margin-left: 66px;
+		width: 13%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:9%;
+		height:32px;
+		top:20px;
+		left:28px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (640x360) Galaxy S5 (landscape) ----------- */
+@media  screen and (max-width: 640px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 5px;
+		display: inline;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 25px;
+		margin-left: 57px;
+		width: 13%;
+		height: 11%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 37px;
+		margin-left: 58px;
+		width: 13%;
+		height: 11%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:10%;
+		height:28px;
+		top:20px;
+		left:28px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (568x320) iPhone 5 (landscape) ----------- */
+@media screen and (max-device-width: 568px) and (orientation: landscape) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_LS.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 5px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 72vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 500%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 166%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 25vh;
+		position:absolute;
+		bottom: 10px;
+		right: 335%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LS1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 24px;
+		margin-right: 446px;
+		width: 13%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: right;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITLS.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 12%;
+		height: 19%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 34px;
+		margin-left: 56px;
+		width: 12%;
+		height: 10%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:10%;
+		height:27px;
+		top:20px;
+		left:28px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+
+/* (2560x1440) QWHD (portrait) */
+@media  screen and (max-width: 1440px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 240px;
+		right: 9%;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 70vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 27px;
+		right: 39%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 336px;
+		right: 39%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 640px;
+		right: 39%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 2276px;
+		margin-left: 114px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 166%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 2187px;
+		margin-left: 114px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:16%;
+		height:104px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 190%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1920x1080) FHD (portrait) */
+@media  screen and (max-width: 1080px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 200px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 68vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 12px;
+		right: 45%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 238px;
+		right: 45%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 456px;
+		right: 45%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: -40px;
+		width: 100%;
+		height: 168%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1712px;
+		margin-left: 100px;
+		width: 21%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1645px;
+		margin-left: 100px;
+		width: 21%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:16%;
+		height:73px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 210%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1280x800) WXGA (portrait) */
+@media  screen and (max-width: 800px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 137px;
+		right: 8%;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 23vh;
+		height: 71vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 3px;
+		right: 50%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 160px;
+		right: 50%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 311px;
+		right: 50%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: -56px;
+		width: 100%;
+		height: 166%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1258px;
+		margin-left: 80px;
+		width: 23%;
+		height: 45%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 165%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1062px;
+		margin-left: 80px;
+		width: 23%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:19%;
+		height:60px;
+		top:48px;
+		left:32px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 185%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1280x768) Smartphone1 (portrait) */
+@media  screen and (max-width: 768px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 171px;
+		right: 8%;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 23vh;
+		height: 70vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: -20px;
+		right: 46%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 135px;
+		right: 46%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 287px;
+		right: 46%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: -60px;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1208px;
+		width: 19%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 166%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1095px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:19%;
+		height:63px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 180%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1280x720) HD Display (portrait) */
+@media  screen and (max-width: 720px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 95px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 23vh;
+		height: 71vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 44px;
+		right: 39%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 202px;
+		right: 39%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 351px;
+		right: 39%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 164%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1136px;
+		width: 21%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 165%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1077px;
+		width: 23%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:16%;
+		height:55px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 215%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (960x640) DVGA Display (portrait) */
+@media  screen and (max-width: 640px) and (orientation: portrait) {
+	.container-menu{
+		width: 104%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 81px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 31vh;
+		height: 70vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 19px;
+		right: 51%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 127px;
+		right: 51%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 232px;
+		right: 51%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: -10px;
+		top: 0;
+		width: 100%;
+		height: 119%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 102%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 1028px;
+		margin-left: 65px;
+		width: 22%;
+		height: 23%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 858px;
+		margin-left: 50px;
+		width: 21%;
+		height: 6%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:14%;
+		height:43px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 203%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (1024x600) WSVGA Display (portrait) */
+@media  screen and (max-width: 600px) and (orientation: portrait) {
+	.container-menu{
+		width: 104%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 120px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 25vh;
+		height: 71vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 30vh;
+		position:absolute;
+		bottom: -2px;
+		right: 43%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 30vh;
+		position:absolute;
+		bottom: 116px;
+		right: 43%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 30vh;
+		position:absolute;
+		bottom: 232px;
+		right: 43%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: -21px;
+		width: 100%;
+		height: 162%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 946px;
+		width: 23%;
+		height: 5%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 160%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 885px;
+		width: 27%;
+		height: 6%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:16%;
+		height:43px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 215%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+@media  screen and (max-width: 480px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 48px;
+	}
+
+	.container-menu .hud .button{
+		text-align: center;
+		width: 32%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button img{
+		width: 100%;
+		margin: 15px;
+		text-align: center;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 60px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:20px;
+		width: 57%;
+		height: 90%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+	    color: #aaaaaa;
+	    float: right;
+	    font-size: 35px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 60px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:20px;
+		width: 57%;
+		height: 90%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+	    color: #aaaaaa;
+	    float: right;
+	    font-size: 35px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 237%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (736x414) iPhone 6/7/8 Plus (portrait) */
+@media  screen and (max-width: 414px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 60px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 66vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 25px;
+		right: 47%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 102px;
+		right: 47%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 28vh;
+		position:absolute;
+		bottom: 179px;
+		right: 47%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 665px;
+		margin-left: 50px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 650px;
+		margin-left: 36px;
+		width: 23%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:16%;
+		height:37px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 225%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (667x375) iPhone 6/7/8 (portrait) ----------- */
+@media  screen and (max-width: 375px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+	/* 	background-color: red; */
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 36px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 66vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 19px;
+		right: 48%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 102px;
+		right: 48%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 28vh;
+		position:absolute;
+		bottom: 179px;
+		right: 48%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 601px;
+		margin-left: 35px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 581px;
+		margin-left: 40px;
+		width: 27%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:20%;
+		height:34px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 220%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* (640x360) Galaxy S5 (portrait) ----------- */
+@media  screen and (max-width: 360px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+	/* 	background-color: red; */
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 54px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 61vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 10px;
+		right: 41%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 77px;
+		right: 41%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 28vh;
+		position:absolute;
+		bottom: 140px;
+		right: 41%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 168%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 583px;
+		margin-left: 36px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 166%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 101%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding:0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 574px;
+		margin-left: 32px;
+		width: 22%;
+		height: 4%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:20%;
+		height:32px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 225%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* iPhone 5 (portrait) ----------- */
+@media screen and (max-device-width: 320px) and (orientation: portrait) {
+
+	.container-menu{
+		width: 100%;
+	/* 	background-color: red; */
+		background-image: url('../asset/menu/MENU_PT.png');
+		background-size: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center; 
+		position: relative; 
+	}
+
+	.container-menu .hud {
+		text-align: center;
+		position: absolute; 
+		bottom: 43px;
+	}
+
+	.container-menu .hud .button {
+		text-align: center;
+		width: 20vh;
+		height: 61vh;
+		position:relative;
+	}
+
+	.container-menu .hud .button .button-bawah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-bawah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 10px;
+		right: 43%;
+	}
+
+	.container-menu .hud .button .button-tengah {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-tengah img {
+		width: 28vh;
+		position:absolute;
+		bottom: 77px;
+		right: 43%;
+	}
+
+	.container-menu .hud .button .button-atas {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container-menu .hud .button .button-atas img {
+		width: 28vh;
+		position:absolute;
+		bottom: 140px;
+		right: 43%;
+	}
+
+	.modal-about {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 167%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-about {
+		background-image: url('../asset/about/LB1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-about img {
+		width: 50%;
+		height: 50%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeAbout {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 513px;
+		margin-right: 212px;
+		width: 23%;
+		height: 16%;
+	    color: #aaaaaa;
+	    float: right;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeAbout:hover, .closeAbout:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-credit {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 0px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 165%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgb(0,0,0,0.4);
+	}
+
+	.modal-content-credit {
+		background-image: url('../asset/credit/CREDITPT.png');
+		background-size: 105%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.modal-content-credit img {
+		width: 100%;
+		height: 20%;
+		opacity:0;
+		overflow: auto;
+	}
+
+	.closeCredit {
+		background-image: url('../asset/button/back/back.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 507px;
+		margin-left: 26px;
+		width: 24%;
+		height: 18%;
+	    color: #aaaaaa;
+	    float: left;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.closeCredit:hover, .closeCredit:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.back-home a img{
+		position:absolute;
+		z-index:900;
+		width:20%;
+		height:31px;
+		top:26px;
+		left:30px;
+		background-image:url(../asset/button/back/home.png);
+		background-repeat: no-repeat;
+		background-size:11%;
+	}
+
+	.back-home:hover, .back-home:focus{
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.flex-container {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -moz-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	#flex-item {
+	   text-align: center;
+	    margin: auto;
+	}
+	#splash {
+		background-size: 180%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+}
+
+/* iPhone X (portrait) ----------- */
+/*@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait)*/
+
+
+/* iPhone X (landscape) ----------- */
+/*@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape)*/
+
+
+/* iPhone 4 (landscape) ----------- */
+/*@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (orientation: landscape)*/
+
+
+/* iPhone 4 (portrait) ----------- */
+/*@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (orientation: portrait)*/
