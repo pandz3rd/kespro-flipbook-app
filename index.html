@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aku Kesehatanku Remaja</title>
+	<meta name="viewport" content="width = 1050, user-scalable = yes" />
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="flipcomic/FlipBook/css/style.css">
+</head>
+<body>
+	<div id="menu" class="container-menu">
+		<div class="hud">
+			<div class="button">
+				<div class="button-bawah">
+					<img id="creditBtn" src="flipcomic/FlipBook/asset/button/landscape/credit_landscape.png">
+				</div>
+				<div class="button-atas">
+					<a href="book.html"><img src="flipcomic/FlipBook/asset/button/landscape/read_landscape.png"></a>
+				</div>
+				<div class="button-tengah">
+					<img id="aboutBtn" src="flipcomic/FlipBook/asset/button/landscape/about_landscape.png">
+				</div>
+				<<!-- div class="button-exit">
+					<img onclick="windowClose()" id="creditBtn" src="flipcomic/FlipBook/asset/button/back/exit.png">
+				</div> -->
+			</div>
+		</div>
+		
+		<div id="modalAbout" class="modal-about">
+			<div class="modal-content-about">	
+				<!-- <span class="closeAbout"><img src="flipcomic/FlipBook/asset/button/back/back.png"></span> -->
+				<span class="closeAbout"></span>
+			</div>
+		</div>
+
+		<div id="modalCredit" class="modal-credit">
+			<div class="modal-content-credit">
+				
+				<span class="closeCredit"><img src="flipcomic/FlipBook/asset/button/back/back.png" alt=""></span>
+				<div class="closeCreditBtn">
+					<a href="index.html"><img src="flipcomic/FlipBook/asset/button/back/back.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="splash" class="flex-container" 
+	style="background-image: url('flipcomic/FlipBook/asset/splash/splashgif.gif');">
+		
+	</div>
+
+	<script type="text/javascript">
+		var btnAbout = document.getElementById('aboutBtn');
+		var btnCredit = document.getElementById('creditBtn');
+
+		var modalAbout = document.getElementById('modalAbout');
+		var modalCredit = document.getElementById('modalCredit');
+
+		var spanAbout = document.getElementsByClassName('closeAbout')[0];
+		var spanCredit = document.getElementsByClassName('closeCredit')[0];
+
+		btnAbout.onclick = function() {
+			modalAbout.style.display = "block";
+		}
+		
+		btnCredit.onclick = function() {
+			modalCredit.style.display = "block";
+		}
+		
+		spanAbout.onclick = function() {
+			modalAbout.style.display = "none";
+		}
+		spanCredit.onclick = function() {
+			modalCredit.style.display = "none";
+			console.log('about kilic')
+		}
+	
+
+		 function fade(element) {
+	        var op = 1;  // initial opacity
+	        var timer = setInterval(function () {
+	            if (op <= 0.1){
+	                clearInterval(timer);
+
+	                element.style.display = 'none';
+	            }
+	            element.style.opacity = op;
+	            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+	            op -= op * 0.1;
+	        }, 50);
+	    }
+
+        setTimeout(function() { 
+
+        	if(typeof(Storage) !== "undefined") {
+
+        		console.log("Already shown" +sessionStorage.getItem('spalashShown'));
+
+        		if( !sessionStorage.getItem('spalashShown') || sessionStorage.getItem('spalashShown') === null ) {
+
+        			document.getElementById('splash') .style.display = 'inline';
+        			document.getElementById('menu') .style.opacity = 0;
+
+        			//Display splash
+        			setTimeout(function(){
+
+        				fade(document.getElementById('splash'));
+
+        				document.getElementById('menu') .style.opacity = 1;
+        				// window.location = "http://hiteshsahu.com";
+
+        				sessionStorage.setItem('spalashShown', true  );
+        			}, 3500);
+
+        		} else {
+
+        		//Display Main Content
+        		document.getElementById('splash') .style.display = 'none' //none
+        		document.getElementById('menu') .style.opacity = 1;
+
+        		console.log("Already shown");
+        		}
+
+        	} else {
+
+        		document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        	}
+        }, 0);
+
+  //       function windowClose() {
+		// 	cordova.plugins.exit();
+		// 	window.close();
+		// }
+	</script>
+</body>
+</html>
